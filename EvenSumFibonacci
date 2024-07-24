@@ -1,0 +1,15 @@
+public class EvenSumFibonacci {
+    public static void main(String[] args) {
+        int n = 4;
+        int a = 0, b = 1, c, sum = 0;
+        for (int i = 1; i <= n; i++) {
+            c = a + b;
+            a = b;
+            b = c;
+            if (c % 2 == 0) {
+                sum += c;
+            }
+        }
+        System.out.println("Even Sum of Fibonacci Series till " + n + " is: " + sum);
+    }
+}
